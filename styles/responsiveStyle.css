@@ -1,0 +1,87 @@
+@media (min-width: 950px) {
+  .brand-name {
+    flex-grow:initial;
+  }
+  .navbar {
+    justify-content: space-between;
+  }
+  .hamburger {
+    display: none;
+  }
+  
+  .menu-list {
+    width: auto;
+    position: initial;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+  }
+  .nav-menu {
+    display: flex;
+    gap: 40px ;
+  }
+  .nav-menu hr,.login-btn{
+    display: none;
+  }
+  .nav-item,.auth-btn{
+    color: #0D0C22;
+    font-weight:600;
+  }
+  .sub-list{
+    display: none;
+    position: absolute;
+    left: 0;
+    top:-1px;
+    padding: 10px 32px;
+    text-wrap: nowrap;
+    border-radius: 10px;
+    border: 1px solid #f0f0f0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    z-index:2;
+    animation: slideBottom 0.1s ease-in;
+  }
+  @keyframes slideBottom {
+    0% {
+      transform: translateY(-10px); 
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0); 
+      opacity: 1; 
+    }
+  }
+  .nav-sub-item span {
+    font-size: 0.7rem;
+    color: #a8a8a8;
+    font-weight: 500;
+  }
+  .nav-link img{
+    display:inline-block;
+   }
+
+.auth-btn{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.auth-btn .login-btn {
+  display: inline-block;
+ 
+}
+}
+@media (min-width: 1400px) {
+  
+  .search{
+    position: relative;
+  }
+  .search img{
+    position: absolute;
+    left: 15px;
+    top: 15px;
+  }
+ .search input {
+    display: inline-block;
+  }
+
+}
