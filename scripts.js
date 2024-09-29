@@ -33,10 +33,4 @@ document.querySelectorAll(".nav-link").forEach((i) =>
   })
 );
 
-
-
-
- 
-
-
 year.innerText =new Date().getFullYear();

@@ -9,9 +9,10 @@ main {
   max-width: 1400px;
  
 }
+
 .profile-auth{
   position: sticky;
-  z-index: 100;
+  z-index: 50;
   top: -40px;
   background-color: #fff;
  }
@@ -96,6 +97,7 @@ main {
 
 .demo-video video{
   border-radius: 10px;
+  background: #e9e9ed;
 }
 .text-content{
   display: flex;
@@ -189,6 +191,7 @@ hr{
   display: block;
   border-radius: 10px;
   transition: transform 0.3s ease-out;
+  background: #e9e9ed;
 }
 
 .shot-thumbnail-content {
