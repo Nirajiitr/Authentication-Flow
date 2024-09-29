@@ -6,7 +6,7 @@ header {
     display: flex;
     gap: 10px;
     align-items: center;
-    padding: 0px 24px;
+    padding: 5px 24px;
   }
   
   .brand-name {
@@ -49,6 +49,7 @@ header {
     height: 100%;
     text-align: start;
     transition: 0.002s;
+    z-index: 10;
   }
   
   .menu-list.active {
@@ -116,7 +117,9 @@ header {
     padding: 10px;
     border-radius: 20px;
   }
-  
+  .signup-btn:hover{
+    background-color: #3a3a3a;
+  }
   .sub-list {
     padding: 0 20px;
     margin: 20px 0;

@@ -18,6 +18,7 @@
   }
   .nav-menu {
     display: flex;
+    border: initial;
     gap: 40px ;
   }
   .nav-menu hr,.login-btn{
@@ -36,8 +37,9 @@
     text-wrap: nowrap;
     border-radius: 10px;
     border: 1px solid #f0f0f0;
+    background-color: #fff;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    z-index:2;
+    z-index:10;
     animation: slideBottom 0.1s ease-in;
   }
   @keyframes slideBottom {
@@ -69,9 +71,88 @@
   display: inline-block;
  
 }
+
+main{
+  position: relative;
+  margin-top:60px ;
+ }
+  .main-container{
+    padding: 5px 120px;
+   
+  }
+  .demo-video video{
+    margin: 0 auto;
+  }
+  .text-content,
+ .demo-video,
+ .profile-auth{
+  width: 90%;
+  margin: 0 auto;
+ }
+ .profile-auth h4{
+   font-size: 26px;
+ }
+ .profile-auth{
+  margin-bottom: 20px;
+ }
+ .message-icon{
+  display: none;
+ }
+ #follow,
+ #getInTouch{
+  display:block;
+}
+#follow{
+  color:  #B2B2B9;
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+  .shot-thumbnail-wrapper {
+    flex-wrap:initial;
+  }
+  .shot-thumbnail-content h5 {   
+    width: 15ch;
+  }
+  .divider .logo-img{
+    width: 80px;
+  }
+   
+   .tool-bar{
+      position: absolute;
+      right: 20px;
+      top: 100px;
+      flex-direction: column;
+   }
+   .text-content,.shot-detail,.more-by-user-section,.upper-footer{
+    margin-bottom: 60px;
+   }
+  footer{
+    padding: 5px 120px;
+  }
+  .upper-footer{
+    flex-direction: row;
+    justify-content: space-between;  
+  }
+  .footer-upper-link{
+    width: 100%;
+    justify-content: space-evenly;
+    font-size: 16px;
+  }
+  .footer-bottom{
+  justify-content: space-between;
+  padding-bottom: 40px;
+  }
+  .footer-bottom a, .footer-bottom p{
+    font-size:.9rem;
+  
+   }
+  
 }
 @media (min-width: 1400px) {
-  
+  .main-container,footer{
+    margin: 0 auto;
+  }
   .search{
     position: relative;
   }
@@ -83,5 +164,7 @@
  .search input {
     display: inline-block;
   }
-
+   
 }
+
+

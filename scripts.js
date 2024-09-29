@@ -2,7 +2,7 @@ const hamburger = document.querySelector(".hamburger");
 const menuList = document.querySelector(".menu-list");
 const dropdown = document.querySelector("#dropdown");
 const subList = document.querySelector(".sub-list");
-
+const year = document.querySelector("#year")
 
 function handleDropdown() {
   if (window.innerWidth >= 1024) {
@@ -33,3 +33,10 @@ document.querySelectorAll(".nav-link").forEach((i) =>
   })
 );
 
+
+
+
+ 
+
+
+year.innerText =new Date().getFullYear();

@@ -1,28 +1,230 @@
+main {
+  width: 100%;
+  padding: 5px 10px;
+}
 
-.main-content {
-    height: 100%;
-    overflow-y: auto; 
-    
-    
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+
+.main-container {
+  width: 100%;
+  max-width: 1400px;
+ 
+}
+.profile-auth{
+  position: sticky;
+  z-index: 100;
+  top: -40px;
+  background-color: #fff;
+ }
+.profile-auth h4{
+  margin-bottom: 10px;
+}
+.user-profile {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-icon,
+.user-detail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-photo {
+  padding: 10px 0;
+  position: relative;
+}
+.profile-photo img {
+  border-radius: 50%;
+}
+.profile-photo .logo-img {
+  position: absolute;
+  left: 0;
+  bottom: 12px;
+}
+.user-name {
+  font-size: 10px;
+}
+.work-check {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #4daa57;
+}
+.online div {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #4daa57;
+  position: relative;
+}
+
+.online div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0#4DAA57;
+  animation: ping-border 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes ping-border {
+  0% {
+    box-shadow: 0 0 0 0 #4daa56a5;
   }
-  
-  .main-content::-webkit-scrollbar {
-    display: none; 
+  100% {
+    box-shadow: 0 0 0 7px #1b281c03;
   }
+}
+.icon{
   
-  .asd {
-    width: 100%;
-    height: 50vh; 
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   padding: 10px;
+   border-radius: 50%;
+   background-color: #fff;
   
-  .asd div {
-    width: 20px;
-    height: 20px;
-    background-color: blueviolet;
-  }
-  
+}
+#follow,#getInTouch{
+  display: none;
+}
+
+.demo-video video{
+  border-radius: 10px;
+}
+.text-content{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap:40px;
+  padding: 10px 5px;
+}
+.text-content p{
+  font-size: .9rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+.text-content p span{
+  text-decoration-line:underline ;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1.5px;
+  text-decoration-color: #EA64D9;
+}
+
+.main-container .tool-bar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+  padding: 10px 5px;
+}
+ .icon{
+  border: 1px solid #e6e6ea ;
+}
+
+.shot-detail{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 5px;
+  gap: 20px;
+}
+.divider{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly ;
+}
+.logo-img{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+hr{
+  width: 100%;
+  height: 2px;
+  border: none;
+  background-color: #E7E7E9;
+}
+
+
+.more-by-heading-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5px;
+}
+
+.shot-thumbnail-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.shot-thumbnail-placeholder {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.157);
+  transition: all 0.3s ease-out;
+  max-width: 100%;
+ 
+}
+
+.shot-thumbnail-link {
+  position: relative;
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
+
+.shot-thumbnail-img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.3s ease-out;
+}
+
+.shot-thumbnail-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+}
+
+.shot-thumbnail-content h5 {
+  color: #fff;
+  font-size: 14px;
+  white-space: nowrap;      
+  overflow: hidden;          
+  text-overflow: ellipsis;   
+  width: 20ch;
+}
+
+.shot-thumbnail-btn  {
+  display: flex;
+  gap: 10px;
+}
+
+.shot-thumbnail-placeholder:hover .shot-thumbnail-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
